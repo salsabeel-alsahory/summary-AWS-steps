@@ -2,128 +2,79 @@
 
 ## Step 1: Checking the App
 
-First, I checked if the app was working properly:
-- npm run build
-- node ./dist/app.js
-- 
-![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/555f6bc7-adc8-409c-9467-04d89d14d29a)
-
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/3269aa0c-fa0b-403e-a76f-8ac9d98a214d)
-
+**Description**: I started by building the app and running it to ensure it's functioning as expected. This helps in identifying any initial issues.
 
 ## Step 2: Creating a Book Instance
 
-Next, I created a new Book instance:
-
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/d430e22d-e82d-4301-be3e-a2e7d501c4ab)
-
+**Description**: I created a new instance to deploy the app on AWS. This instance will host the application and allow users to access it.
+**Link**: ![Creating a Book Instance](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/d430e22d-e82d-4301-be3e-a2e7d501c4ab)
 
 ## Step 3: Connecting to the Instance
 
-After creating the instance, I selected the instance we were working on and went to the connect section:
-
-![Connect Instance](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/cc21beec-6edf-4c44-bc79-a63a8aa6a990.png)
-
+**Description**: After setting up the instance, I navigated to the instance details and accessed the "Connect" section to retrieve SSH connection information.
+**Link**: ![Connecting to the Instance](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/cc21beec-6edf-4c44-bc79-a63a8aa6a990.png)
 
 ## Step 4: Copying SSH and Pasting in the Terminal
 
-Then, I copied the SSH command provided and pasted it into the terminal:
-![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/f38cd329-8b6d-4820-a6b0-d71981bd9246)
+**Description**: I copied the SSH command provided in the AWS console and pasted it into my local terminal. This connects my local machine to the AWS instance.
+**Link**: ![Copying SSH](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/f38cd329-8b6d-4820-a6b0-d71981bd9246)
 
+## Step 5: Connect the SSH on My Device
 
-## Step 5: Connect the SSH on My Device Using This Command (ssh -i "booksKeyPair.pem" ubuntu@ec2-52-90-81-143.compute-1.amazonaws.com)
+**Description**: I used the SSH command along with the private key ("booksKeyPair.pem") to establish a secure connection to the AWS instance from my local machine.
+**Link**: ![Connecting SSH](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/4f1a8b9c-2942-4197-8159-71fe6b4b3e22)
 
-![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/4f1a8b9c-2942-4197-8159-71fe6b4b3e22)
+## Step 6: Updating the System
 
+**Description**: I ran the command `sudo apt update` to update the package lists for upgrades and installations on the AWS instance.
+**Link**: ![Updating System](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/e701fa3a-13f0-40cb-8ba6-44a21a0bc595)
 
+## Step 7: Installing AWS CLI
 
-## Step 6: i used sudo update (sudo apt update)
-![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/e701fa3a-13f0-40cb-8ba6-44a21a0bc595)
+**Description**: I used the command `sudo apt install awscli` to install the AWS Command Line Interface, which allows interaction with AWS services from the terminal.
+**Link**: ![Installing AWS CLI](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/9d3817cd-50f3-471d-9f54-c5ff786e391c)
 
-## Step 7: i used (sudo apt install awscli)
+## Install Node.js and Curl
 
-![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/9d3817cd-50f3-471d-9f54-c5ff786e391c)
+**Description**: I installed Node.js and Curl on the AWS instance, which are required to run and manage the application.
+**Link**: ![Installing Node.js and Curl](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/80cc3a1f-6b20-4eda-8c8f-e3d96e97e630)
 
-## install node.js and curl: 
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/80cc3a1f-6b20-4eda-8c8f-e3d96e97e630)
+## Creating Infrastructure Folder and prepare-instance.sh File
 
+**Description**: I created an "infrastructure" folder and prepared a shell script named "prepare-instance.sh" to automate the setup process.
+**Link**: ![Creating Infrastructure Folder](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/c06a34fe-24f2-4546-a0a3-600a272efa36)
 
-## create infarasttructure folder and prepare-instance.sh file
-![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/c06a34fe-24f2-4546-a0a3-600a272efa36)
+## Creating app.service File
 
-## create app.service file :
-![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/7dbd4be8-c8b0-4e31-bb11-9692d3516c95)
+**Description**: I created an "app.service" file that defines the service configuration for running the app using systemd.
+**Link**: ![Creating app.service File](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/7dbd4be8-c8b0-4e31-bb11-9692d3516c95)
 
+## Cloning the Repository via HTTPS
 
-## making git clone by https:
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/e30b806c-a10a-471d-b834-2fa26e2c5661)
+**Description**: I cloned the app repository from GitHub using the HTTPS link. This will bring the app's code to the AWS instance.
+**Link**: ![Cloning the Repository](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/e30b806c-a10a-471d-b834-2fa26e2c5661)
 
-## cd to the app then instal npm 
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/b1bc0ad2-6b80-4701-b835-386da963490d)
+## Installing Dependencies and Building the App
 
-## npm run build:
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/45628cea-15ae-47b5-8866-95e4fe4a4969)
+**Description**: I navigated to the app directory and used `npm install` and `npm run build` to install dependencies and build the app.
+**Link**: ![Installing Dependencies and Building](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/b1bc0ad2-6b80-4701-b835-386da963490d)
 
-## node ./dist/app.js
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/229a9340-9125-4e7f-8e52-0ddfc521649c)
+## Running the App
 
+**Description**: I ran the app using `npm run dev` to test its functionality.
+**Link**: ![Running the App](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/ae19760e-d699-45fd-8acb-a692766ad4a4)
 
-## running the app using npm run dev :
-![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/ae19760e-d699-45fd-8acb-a692766ad4a4)
+## Creating Template Launch Configuration
 
- ## make everything .json :
-![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/4e40590c-2096-4c24-bcbe-e25db2ad00d4)
+**Description**: I created a launch configuration template that includes the necessary setup steps for the instance.
+**Link**: ![Creating Template Launch](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/50cfba89-faa1-4499-bc66-309c5b243bfe)
 
-## create temblate luanche:
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/50cfba89-faa1-4499-bc66-309c5b243bfe)
+## Configuring Auto Scaling Group
 
-## choose the correct sitting:
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/e9f8328b-218a-47ae-b9af-e524b651bd11)
+**Description**: I configured an auto scaling group based on the launch configuration to ensure the availability and reliability of the application.
+**Link**: ![Configuring Auto Scaling](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/d3daadef-1f0f-4b51-a7fe-322e1757e1cd)
 
-we add this code to ouer temblete : 
-```javascript
-#!/bin/bash
-set -e 
+## Checking Instance Activity
 
-sudo apt update
-
-
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-
-sudo apt install nodejs  curl -y
-git clone https://github.com/salsabeel-alsahory/AWS-project.git app
-cd app 
-npm install
-npm run build
-sudo mv ./infarastructure/app.service /etc/systemd/system/
-
-sudo systemctl daemon-reload
-
-sudo systemctl enable app.service
-# sudo systemctl start app.service
-sudo reboot 
-
-```
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/a2da4efd-bca1-4f6e-addc-e62f43db3364)
-
-## create auto scailing group :
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/0f72ad14-c748-4788-859d-c0c4a32a43a1)
-
-## sitting of auto scsaling group : 
-
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/d3daadef-1f0f-4b51-a7fe-322e1757e1cd)
-
-## the group created successfuly :
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/6ef6913e-7d3f-4853-b598-c46227207747)
-
-## go to Activity and check the instance:
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/a48cd2c0-eff9-491e-af73-26add4fae1c9)
-
-
-## new instanc is created :
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/96a262eb-8205-4404-a109-3a7ae4004280)
-
-## check the activity :
-![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/a79e5a58-35cf-4929-a917-7c04b6a46cce)
-
-
+**Description**: I monitored the instance activity to ensure that new instances were being launched and scaled as needed.
+**Link**: ![Checking Instance Activity](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/a48cd2c0-eff9-491e-af73-26add4fae1c9)
