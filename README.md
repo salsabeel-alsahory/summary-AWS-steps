@@ -1,6 +1,6 @@
 # AWS Project
 
-## Step 1: Checking the App
+## Step 1: ✅ Checking the App
 
 First, I checked if the app was working properly:
 - npm run build
@@ -10,37 +10,37 @@ First, I checked if the app was working properly:
 ![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/3269aa0c-fa0b-403e-a76f-8ac9d98a214d)
 
 
-## Step 2: Creating a Book Instance
+## Step 2: 📚 Creating a Book Instance
 
 Next, I created a new Book instance:
 
 ![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/d430e22d-e82d-4301-be3e-a2e7d501c4ab)
 
 
-## Step 3: Connecting to the Instance
+## Step 3: 🌐 Connecting to the Instance
 
 After creating the instance, I selected the instance we were working on and went to the connect section:
 ![image](https://github.com/salsabeel-alsahory/summary-AWS-steps/assets/100838183/7518ad44-fdf1-48b4-9f3f-5444764bb71c)
 
 
-## Step 4: Copying SSH and Pasting in the Terminal
+## Step 4: 📋 Copying SSH and Pasting in the Terminal
 
 Then, I copied the SSH command provided and pasted it into the terminal:
 ![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/f38cd329-8b6d-4820-a6b0-d71981bd9246)
 
 
-## Step 5: Connect the SSH on My Device Using This Command (ssh -i "booksKeyPair.pem" ubuntu@ec2-52-90-81-143.compute-1.amazonaws.com)
+## Step 5: 🔗 Connect the SSH on My Device Using This Command (ssh -i "booksKeyPair.pem" ubuntu@ec2-52-90-81-143.compute-1.amazonaws.com)
 
 ![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/4f1a8b9c-2942-4197-8159-71fe6b4b3e22)
 
 
-## Step 6: Updating the System
+## Step 6: 🔄 Updating the System
 
 I used the command `sudo apt update` to update the package lists for upgrades and installations on the AWS instance.
 ![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/e701fa3a-13f0-40cb-8ba6-44a21a0bc595)
 
 
-## Step 7: Installing AWS CLI
+## Step 7: 💼 Installing AWS CLI
 
 I used `sudo apt install awscli` to install the AWS Command Line Interface on the instance.
 ![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/9d3817cd-50f3-471d-9f54-c5ff786e391c)
