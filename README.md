@@ -20,8 +20,7 @@ Next, I created a new Book instance:
 ## Step 3: Connecting to the Instance
 
 After creating the instance, I selected the instance we were working on and went to the connect section:
-
-![Connect Instance](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/cc21beec-6edf-4c44-bc79-a63a8aa6a990.png)
+![image](https://github.com/salsabeel-alsahory/summary-AWS-steps/assets/100838183/7518ad44-fdf1-48b4-9f3f-5444764bb71c)
 
 
 ## Step 4: Copying SSH and Pasting in the Terminal
