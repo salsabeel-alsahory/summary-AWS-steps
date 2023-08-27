@@ -35,6 +35,8 @@ Then, I copied the SSH command provided and pasted it into the terminal:
 ## Step 6: 🔄 Updating the System
 
 I used the command `sudo apt update` to update the package lists for upgrades and installations on the AWS instance.
+
+
 ![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/e701fa3a-13f0-40cb-8ba6-44a21a0bc595)
 
 
@@ -53,6 +55,7 @@ I installed Node.js and Curl on the AWS instance, required to run and manage the
 ## Creating Infrastructure Folder and prepare-instance.sh File
 
 I created an "infrastructure" folder and prepared a shell script named "prepare-instance.sh" to automate the setup process.
+
 ![image](https://github.com/salsabeel-alsahory/summary-AWS-steps/assets/100838183/4410a63c-512c-48f7-8851-c8dd67554217)
 
 
@@ -60,6 +63,7 @@ I created an "infrastructure" folder and prepared a shell script named "prepare-
 ## Creating app.service File
 
 I created an "app.service" file that defines the service configuration for running the app using systemd.
+
 ![image](https://github.com/salsabeel-alsahory/summary-AWS-steps/assets/100838183/dbaf5ebc-5968-4217-b871-80722df20de0)
 
 
