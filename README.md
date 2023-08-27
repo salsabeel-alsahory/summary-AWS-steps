@@ -83,12 +83,14 @@ I navigated to the app directory, used `npm install`, and `npm run build` to ins
 ## Running the App
 
 I ran the app using `npm run dev` to test its functionality.
+
 ![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/ae19760e-d699-45fd-8acb-a692766ad4a4)
 
 
 ## Making Everything .json
 
 I made every aspect of the app configuration .json-based.
+
 ![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/4e40590c-2096-4c24-bcbe-e25db2ad00d4)
 
 
