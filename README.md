@@ -28,8 +28,8 @@ Then, I copied the SSH command provided and pasted it into the terminal:
 
 
 ## Step 5: 🔗 Connect the SSH on My Device Using This Command (ssh -i "booksKeyPair.pem" ubuntu@ec2-52-90-81-143.compute-1.amazonaws.com)
+![image](https://github.com/salsabeel-alsahory/summary-AWS-steps/assets/100838183/0898107f-d48f-46bf-9391-7c7e67beaf4e)
 
-![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/4f1a8b9c-2942-4197-8159-71fe6b4b3e22)
 
 
 ## Step 6: 🔄 Updating the System
