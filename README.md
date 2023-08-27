@@ -53,13 +53,15 @@ I installed Node.js and Curl on the AWS instance, required to run and manage the
 ## Creating Infrastructure Folder and prepare-instance.sh File
 
 I created an "infrastructure" folder and prepared a shell script named "prepare-instance.sh" to automate the setup process.
-![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/c06a34fe-24f2-4546-a0a3-600a272efa36)
+![image](https://github.com/salsabeel-alsahory/summary-AWS-steps/assets/100838183/4410a63c-512c-48f7-8851-c8dd67554217)
+
 
 
 ## Creating app.service File
 
 I created an "app.service" file that defines the service configuration for running the app using systemd.
-![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/7dbd4be8-c8b0-4e31-bb11-9692d3516c95)
+![image](https://github.com/salsabeel-alsahory/summary-AWS-steps/assets/100838183/dbaf5ebc-5968-4217-b871-80722df20de0)
+
 
 
 ## Making Git Clone by HTTPS
