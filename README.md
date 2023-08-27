@@ -5,8 +5,6 @@
 First, I checked if the app was working properly:
 - npm run build
 - node ./dist/app.js
-
-![image](https://github.com/salsabeel-alsahory/AWS-project/assets/100838183/555f6bc7-adc8-409c-9467-04d89d14d29a)
 ![image](https://github.com/salsabeel-alsahory/AWS-New-Project/assets/100838183/3269aa0c-fa0b-403e-a76f-8ac9d98a214d)
 
 
